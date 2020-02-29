@@ -1,0 +1,17 @@
+.vn {
+    border: 1px solid green;
+    width: 300px;
+    height: 20px;
+}
+
+.vnr {
+    background-color: forestgreen;
+    width: 55%;
+    height: 100%;
+}
+
+.proz {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+}

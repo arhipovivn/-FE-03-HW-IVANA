@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> form</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a>
+                <h1>Photocard</h1>
+            </a>
+        </div>
+        <div>
+            <img src="1.jpg" alt="instagram" width="300" height="300">
+        </div>
+    </header>
+    <form action="#">
+        <div>
+            <a>
+                <h3> Login From</h3>
+            </a>
+            <label>
+                <label for="YourEmile">Emile:</label>
+            <input type="email" name="YourEmile" required placeholder="YourEmile">
+            </label>
+            <label for="YourPassword">Password:</label>
+            <input type="password" name="YourPassword" required placeholder="Password">
+            <input type="button" value="ВОЙТИ" onclick=" location.href='feed.html'">
+        </div>
+    </form>
+    <form action="feed.html" method="POST">
+        <div>
+            <a>
+                <h3>Registration</h3>
+            </a>
+
+            <label for="Name">YourName:</label>
+            <input name="Name" required placeholder="YourName">
+
+            <label for="YourEmile1">YourEmile: </label>
+            <input type="email" name="YourEmile1" required placeholder="YourEmile">
+
+            <label for="YourPassword1"> Your Password:  </label>
+            <input type="password" name="YourPassword1" required placeholder="Password">
+
+            <label for="YourPassword"> Repeat Password:  </label>
+            <input type="password" name="YourPassword" required placeholder="Password"> <br> <br>
+            <label for="check"> Согласие с порядком обработки персональных данных </label>
+            <input id="check" type="checkbox"> <br> <br>
+            <input type="button" value="Зарегистрироваться" onclick=" location.href='feed.html'">
+        </div>
+    </form>
+</body>
+
+</html>

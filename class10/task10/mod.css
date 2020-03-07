@@ -1,0 +1,105 @@
+                    * {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    
+                    body {
+                        background-color: darkgrey;
+                    }
+                    
+                    ul li {
+                        list-style: none;
+                    }
+                    
+                    .panel {
+                        display: flex;
+                        text-align: center;
+                        background-color: lightgray;
+                        padding: 50px;
+                        width: 92%;
+                    }
+                    
+                    .a {
+                        background-color: rgba(112, 112, 112, 0.425);
+                        padding: 20px;
+                        border-radius: 1px;
+                        margin-left: 45px;
+                        font-size: 19px;
+                        display: inline-block;
+                        position: relative;
+                        height: 30px;
+                        width: 200px;
+                        text-decoration: none;
+                        color: black;
+                        font-weight: 700;
+                        position: relative;
+                    }
+                    
+                    .a:hover {
+                        background-color: rgb(175, 201, 192);
+                    }
+                    
+                    .drop {
+                        background-color: rgb(175, 201, 192);
+                        width: 140px;
+                        display: none;
+                        position: absolute;
+                        margin-left: 90px;
+                        margin-right: 90px;
+                    }
+                    
+                    .panel :hover>.drop {
+                        display: block;
+                    }
+                    
+                    .nazv {
+                        text-align: center;
+                        font-weight: 600;
+                        font-size: larger;
+                    }
+                    
+                    .forma {
+                        text-align: center;
+                    }
+                    
+                    iframe {
+                        display: none;
+                        position: relative;
+                        max-width: 400px;
+                        margin: 10px auto;
+                    }
+                    
+                    input[id=rad1]:checked~iframe {
+                        display: block;
+                    }
+                    
+                    input[id=rad2]:checked~iframe {
+                        display: block;
+                    }
+                    
+                    label[for=adr] {
+                        display: none;
+                    }
+                    
+                    input[name=te] {
+                        display: none;
+                        margin-left: 45%;
+                    }
+                    
+                    input[name=vibr]:checked~label[for=adr] {
+                        display: block;
+                    }
+                    
+                    input[name=vibr]:checked~input[name="te"] {
+                        display: block;
+                    }
+                    
+                    textarea {
+                        width: 300px;
+                    }
+                    
+                    footer {
+                        margin: 20px;
+                        font-size: 15px;
+                        text-align: center;
+                    }

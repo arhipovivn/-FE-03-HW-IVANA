@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>cart</title>
+    <link rel="stylesheet" href="mod.css">
+</head>
+
+<body>
+    <div class="panel">
+        <ul>
+            <li>
+
+                <a href="#" class="a"> Бытовая техника</a>
+            </li>
+            <ul class="drop">
+
+                <li>Стиральные машины</li>
+                <li>Пылесосы</li>
+                <li>Швейные машины </li>
+                <li>Утюги</li>
+                <li>Электровеники</li>
+                <li>Сушилки для обуви</li>
+            </ul>
+        </ul>
+        <ul>
+
+            <li>
+
+                <a href="#" class="a"> Техника для кухни</a>
+            </li>
+            <ul class="drop">
+                <li>Холодильники</li>
+                <li>Кухонные плиты</li>
+                <li>Морозильники </li>
+                <li>Настольные плиты</li>
+                <li>Мини печи</li>
+                <li>Вытяжки</li>
+                <li>Микроволновые печи</li>
+            </ul>
+        </ul>
+        <ul>
+            <li>
+
+                <a href="#" class="a"> Компьютерная техника</a>
+            </li>
+            <ul class="drop">
+                <li>Ноутбуки</li>
+                <li> Планшеты</li>
+                <li>Компьютеры </li>
+                <li>Игровые приставки</li>
+                <li> Серверное оборудование </li>
+            </ul>
+        </ul>
+        <ul>
+            <li>
+
+                <div class="a">Корзина</div>
+            </li>
+        </ul>
+
+    </div> <br><br><br><br><br>
+    <div>
+        <p class="nazv">Сделать заказ:</p> <br> <br>
+        <form action="#" class="forma">
+            <div>
+
+                <label for="name"> Введите имя:</label>
+                <input type="text" placeholder="Иван">
+                <label for="sname"> Введите Фамилию:</label>
+                <input type="text" placeholder="Иванов">
+                <label for="mail">Введите почту:</label>
+                <input type="email" placeholder="123@gmail.com">
+            </div>
+            <div>
+                <label for="dost">Выберете способ доставки:</label>
+
+                <p class="vlin"> Самовывоз со склада по адресу</p>
+                <input type="radio" name="vibr" id="rad1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2417628.5557509004!2d27.986708999999998!3d53.718878999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1583354596471!5m2!1sru!2sby" width="400" height="350" frameborder="0"
+                    style="border:0;" allowfullscreen="#"></iframe> <br>
+                <p class="vlin"> Курьером по минску</p>
+                <input type="radio" id="rad2" name="vibr"> <br>
+
+
+                <label for="adr">Введите свой адрес:</label>
+                <input type="text" name="te" placeholder="Пушкина 76.кв25.">
+
+            </div>
+            <div class="com">
+                <label for="komment"> Комментраий к заказу:</label> <br>
+                <textarea name="komment" cols="30" rows="10"></textarea><br>
+                <label for="zak">Я прочитал и согласен с условиями доставки </label>
+                <input id="zak" type="checkbox" required>
+                <input type="button" value="Подтвердить заказ">
+            </div>
+
+        </form>
+    </div>
+
+
+    <footer>
+        <P>Свяжитесь с нами:</P>
+        <P>Время работы с 9:00-19:00</P>
+        <p> Наш адрес: Пушкина 4 офис 310</p>
+        <p>+3752585765849</p>
+        <p>skype:</p>
+    </footer>
+</body>
+
+</html>

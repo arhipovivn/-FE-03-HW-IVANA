@@ -1,0 +1,21 @@
+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    background-image: url(11.jpg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+
+input[class=check]:checked+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    background-image: url(12.jpg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+}

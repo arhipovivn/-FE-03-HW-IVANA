@@ -1,0 +1,15 @@
+a {
+    text-align: center;
+    font-size: 300px;
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:visited {
+    color: red;
+    opacity: .7;
+}

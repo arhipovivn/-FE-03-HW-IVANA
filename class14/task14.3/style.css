@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ninz {
+    width: 65px;
+    height: 135px;
+    background-image: url(1.jpg);
+}
+
+.ninz:hover {
+    animation: .8s infinite alternate steps(6) ninz;
+}
+
+@keyframes ninz {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100%;
+    }
+}

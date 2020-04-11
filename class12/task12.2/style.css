@@ -5,11 +5,11 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: blue;
+a:visited:hover {
+    color: red;
+    opacity: .5;
 }
 
-a:visited {
-    color: red;
-    opacity: .7;
+a:hover {
+    color: blue;
 }

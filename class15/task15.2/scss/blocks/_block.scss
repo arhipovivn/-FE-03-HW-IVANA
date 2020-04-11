@@ -1,0 +1,30 @@
+        body {
+            @import'item-name';
+            @import'item-description';
+            @import'item-cost';
+            @import'item-name';
+            @import'item-star';
+            @import'shop-name';
+            @import'shop-article';
+            @import'item-foot';
+            @import'content';
+            @import'button';
+            table {
+                width: 80%;
+                margin-left: 10%;
+                .font-head {
+                    font-family: $font-controls;
+                    font-weight: 300;
+                }
+                img {
+                    width: 50%;
+                    height: 30%;
+                    box-sizing: border-box;
+                    margin-left: 30px;
+                    transition: 1s;
+                }
+                img:hover {
+                    transform: scale(1.4);
+                }
+            }
+        }

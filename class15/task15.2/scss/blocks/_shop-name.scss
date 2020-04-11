@@ -1,0 +1,12 @@
+header {
+    width: 100%;
+    .shop-name {
+        font-size: 40px;
+        text-align: center;
+        width: 700;
+        transition: 3s;
+    }
+    .shop-name:hover {
+        transform: scale(1.2);
+    }
+}

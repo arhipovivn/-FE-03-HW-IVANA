@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.menu {
+  margin-left: 80px;
+}
+
+form iframe {
+  display: none;
+  position: relative;
+}
+form input[id=inlineRadio1]:checked ~ iframe {
+  display: block;
+}
+form input[id=inlineRadio2]:checked ~ iframe {
+  display: block;
+}
+form label[for=adr] {
+  display: none;
+}
+form input[name=te] {
+  display: none;
+  margin-left: 45%;
+}
+form input[name=vibr]:checked ~ label[for=adr] {
+  display: block;
+}
+form input[name=vibr]:checked ~ input[name=te] {
+  display: block;
+}
+
+.foot {
+  width: 100%;
+  display: inline-flex;
+  margin-top: 200px;
+  flex-flow: row wrap;
+  border-top: 1px solid #cccaca;
+}
+
+/*# sourceMappingURL=style.css.map */

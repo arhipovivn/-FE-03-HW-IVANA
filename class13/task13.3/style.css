@@ -1,0 +1,166 @@
+     * {
+         margin: 0;
+         padding: 0;
+         font-family: "Roboto", sans-serif;
+         text-decoration: none;
+         color: white;
+     }
+     
+     .wrapper {
+         background-image: url("https://static.tildacdn.com/tild6535-3035-4530-b630-383061373964/kct-2019.jpg");
+         width: 100%;
+         height: 50%;
+         background-repeat: no-repeat;
+         background-size: cover;
+         box-sizing: border-box;
+     }
+     
+     .background {
+         width: 100%;
+         height: 90%;
+         background-color: rgba(0, 0, 0, .5);
+         transition: background-color .3s ease;
+         z-index: 1;
+     }
+     
+     .head_menu {
+         align-items: baseline;
+         display: flex;
+         width: 1250px;
+         height: 100px;
+     }
+     
+     .logo {
+         display: inline-flex;
+         align-items: flex-start;
+         min-width: 350px;
+         height: auto;
+         font-size: 40px;
+         font-weight: 600;
+         margin-left: 25px;
+         margin-top: 20px;
+     }
+     
+     .up {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 1200px;
+     }
+     
+     .up a {
+         display: inline-flex;
+         padding: 0 20px;
+         font-size: 18px;
+         font-weight: 600;
+         font-family: "Roboto", sans-serif;
+         margin-top: 0;
+     }
+     
+     .up a:hover {
+         border-bottom: 1px solid white;
+     }
+     
+     .tel {
+         width: auto;
+         height: auto;
+         padding-right: 20px;
+     }
+     
+     .tel a {
+         font-size: 18px;
+         font-weight: 400;
+         font-family: "Roboto", sans-serif;
+     }
+     
+     .circl {
+         display: flex;
+     }
+     
+     .circl a {
+         margin-left: 10px;
+     }
+     
+     .mid {
+         padding-top: 30px;
+         display: flex;
+         justify-content: center;
+     }
+     
+     .mid>h1 {
+         font-size: 60px;
+         font-weight: 600;
+         font-family: "Roboto", sans-serif;
+         text-align: center;
+         width: 850px;
+     }
+     
+     .mid-text {
+         display: flex;
+         justify-content: center;
+     }
+     
+     .element {
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         font-family: sans-serif;
+         text-align: center;
+         width: 320px;
+         padding: 80px 45px;
+     }
+     
+     .mid-text .element h1 {
+         color: #fac832;
+         font-size: 32px;
+         font-weight: 600;
+     }
+     
+     .mid-text .element span {
+         padding: 10px;
+         color: white;
+         font-size: 15px;
+         font-weight: 400;
+         letter-spacing: 1px;
+     }
+     
+     .mid-end {
+         justify-content: center;
+         display: flex;
+         width: 100%;
+     }
+     
+     .mid-end>a {
+         font-size: 30px;
+         font-weight: 600;
+         font-family: "Roboto", sans-serif;
+         text-align: center;
+         width: 650px;
+     }
+     
+     .sing {
+         justify-content: center;
+         display: flex;
+         width: auto;
+         padding: 48px 0;
+     }
+     
+     button {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 358px;
+         height: 53px;
+         background-color: #d14444;
+         border: 0;
+         border-radius: 6px;
+         font-size: 18px;
+         font-weight: 700;
+         font-family: "Roboto", sans-serif;
+         color: white;
+     }
+     
+     button:hover {
+         background-color: white;
+         color: #d14444;
+     }

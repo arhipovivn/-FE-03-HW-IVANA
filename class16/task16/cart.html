@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap.doc</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="name-shop">
+                <h1>Название </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Бытовая техника
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Стиральные машины</a>
+                    <a class="dropdown-item" href="#">Пылесосы</a>
+                    <a class="dropdown-item" href="#">Швейные машины</a>
+                    <a class="dropdown-item" href="#">Утюги</a>
+                    <a class="dropdown-item" href="#">Электровеники</a>
+                    <a class="dropdown-item" href="#">Сушилки для обуви</a>
+                </div>
+            </div>
+            <div class="menu">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Техника для кухни
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Холодильники</a>
+                    <a class="dropdown-item" href="#">Кухонные плиты</a>
+                    <a class="dropdown-item" href="#">Морозильники</a>
+                    <a class="dropdown-item" href="#">Настольные плиты</a>
+                    <a class="dropdown-item" href="#">Вытяжки</a>
+                    <a class="dropdown-item" href="#">Микроволновые печи</a>
+                </div>
+            </div>
+            <div class="menu">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Компьютерная техника
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Ноутбуки</a>
+                    <a class="dropdown-item" href="#">Планшеты</a>
+                    <a class="dropdown-item" href="#">Компьютеры</a>
+                    <a class="dropdown-item" href="#">Игровые приставки</a>
+                    <a class="dropdown-item" href="#">Серверное оборудование</a>
+                </div>
+            </div>
+            <div class="menu">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Корзина
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="name-form">
+                <h3>Сделать заказ:</h3>
+            </div>
+        </div>
+
+
+        <form>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationServer01">Фамилия</label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Иванов" required>
+                    <div class="valid-feedback">
+                        Отлично!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationServer02">Имя</label>
+                    <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Иван" required>
+                    <div class="valid-feedback">
+                        Отлично!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationServerUsername">Email</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                        </div>
+                        <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Email" aria-describedby="inputGroupPrepend3" required>
+                        <div class="invalid-feedback">
+                            Пожалуйста введите свою почту
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Самовывоз со склада по адресу</label> <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2417628.5557509004!2d27.986708999999998!3d53.718878999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1583354596471!5m2!1sru!2sby" width="400" height="350" frameborder="0"
+                    style="border:0;" allowfullscreen="#"></iframe> <br>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Курьером по минску</label>
+                <label for="adr">Введите свой адрес:</label>
+                <input type="text" name="te" placeholder="Пушкина 76.кв25.">
+            </div>
+
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                    <label class="form-check-label" for="invalidCheck3">
+                        Я прочитал и согласен с условиями доставки
+                </label>
+                    <div class="invalid-feedback">
+                        Ознакомьтесь с условиями доставки!
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Подтвердить заказ</button>
+        </form>
+
+
+
+        <div class="foot">
+            <div class="col-xl-6">
+
+                <p>
+                    MTC +37533213244</p>
+
+                <p> Мы находимся по адресу: Ул. Колоса 5</p>
+            </div>
+            <div class="col-xl-6">
+                <ul>Время работы:
+                    <li>Пн-пт 8.00-18.00</li>
+                    <li>Сб-вс 9.00-16.00</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

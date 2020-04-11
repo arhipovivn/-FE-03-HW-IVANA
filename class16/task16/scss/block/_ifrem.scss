@@ -1,0 +1,25 @@
+form {
+    iframe {
+        display: none;
+        position: relative;
+    }
+    input[id=inlineRadio1]:checked~iframe {
+        display: block;
+    }
+    input[id=inlineRadio2]:checked~iframe {
+        display: block;
+    }
+    label[for=adr] {
+        display: none;
+    }
+    input[name=te] {
+        display: none;
+        margin-left: 45%;
+    }
+    input[name=vibr]:checked~label[for=adr] {
+        display: block;
+    }
+    input[name=vibr]:checked~input[name=te] {
+        display: block;
+    }
+}

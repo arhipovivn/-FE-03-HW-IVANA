@@ -1,0 +1,24 @@
+.nav_menu {
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .item1 {
+        color: white;
+        display: inline-flex;
+        align-content: center;
+        font-size: 15px;
+    }
+    .item1 a {
+        text-decoration: none;
+        color: white;
+    }
+    .item1 a:hover {
+        color: rgb(80, 117, 238);
+    }
+}
+
+.main_logo {
+    position: absolute;
+    margin-left: 900px;
+}

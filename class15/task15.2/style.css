@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+* a {
+    text-decoration: none;
+    color: black;
+}
+
+body .item-name {
+    text-align: center;
+}
+
+body .item-description {
+    text-align: justify;
+}
+
+body .item-cost {
+    font-size: 18px;
+}
+
+body .item-name {
+    text-align: center;
+}
+
+body .item-star {
+    font-size: 18px;
+}
+
+body header {
+    width: 100%;
+}
+
+body header .shop-name {
+    font-size: 40px;
+    text-align: center;
+    width: 700;
+    transition: 3s;
+}
+
+body header .shop-name:hover {
+    transform: scale(1.2);
+}
+
+body .shop-article {
+    font-family: "Open Sans", sans-serif;
+    width: 80%;
+    margin-left: 10%;
+    text-align: justify;
+}
+
+body .item-foot>p {
+    display: inline-flex;
+    flex-flow: row wrap;
+}
+
+body .item-foot {
+    margin-left: 10%;
+}
+
+body .content {
+    margin-left: 10%;
+}
+
+body button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #706666;
+    margin-left: 10%;
+    color: cornsilk;
+}
+
+body table {
+    width: 80%;
+    margin-left: 10%;
+}
+
+body table .font-head {
+    font-family: "Arial", sans-serif;
+    font-weight: 300;
+}
+
+body table img {
+    width: 50%;
+    height: 30%;
+    box-sizing: border-box;
+    margin-left: 30px;
+    transition: 1s;
+}
+
+body table img:hover {
+    transform: scale(1.4);
+}
+
+
+/*# sourceMappingURL=style.css.map */

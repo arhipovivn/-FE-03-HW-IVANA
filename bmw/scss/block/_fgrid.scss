@@ -1,0 +1,91 @@
+/* .fgrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    . {
+        margin-top: 700px;
+        width: 50%;
+        height: 30%;
+        background-color: yellow;
+        grid-row: 1 / 3;
+        grid-column: 1 / 3;
+    }
+    .fam {
+        margin-top: 700px;
+        width: 50%;
+        height: 30%;
+        box-sizing: border-box;
+        position: absolute;
+        background-image: url("https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/bmw-game/bg-00-teaser-square.jpg?imwidth=1024");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+} */
+
+.fgrid {
+    display: grid;
+    position: absolute;
+    margin-top: 13%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    width: 100%;
+    height: 650px;
+    .col1 {
+        width: 100%;
+        height: 655px;
+        .vid {
+            /* position: relative;
+            z-index: -1; */
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+        }
+        .col1txt {
+            width: 200px;
+            z-index: 4;
+            position: absolute;
+            color: #fff;
+            font-size: 80px;
+            text-align: center;
+        }
+    }
+    .col2 {
+        z-index: 65;
+        box-sizing: border-box;
+        background-image: url("https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/bmw-game/bg-00-teaser-square.jpg?imwidth=1024");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 640px;
+        .first {
+            position: absolute;
+            margin-top: 26%;
+            margin-left: 5%;
+            font-size: 26px;
+        }
+        .first:hover {
+            text-decoration: none;
+            color: white;
+        }
+        .second {
+            position: absolute;
+            margin-top: 30%;
+            margin-left: 5.5%;
+            font-size: 26px;
+            display: inline-flex;
+            flex-wrap: wrap;
+            font-size: 50px;
+            width: 560px;
+            height: 100px;
+        }
+        .second:hover {
+            text-decoration: none;
+            color: white;
+        }
+        .bt {
+            margin-top: 86%;
+            margin-left: 10%;
+            @import'button';
+        }
+    }
+}

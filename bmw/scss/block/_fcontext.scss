@@ -1,0 +1,32 @@
+    .fcontext {
+        .first {
+            position: absolute;
+            margin-top: 12%;
+            margin-left: 5%;
+            font-size: 26px;
+        }
+        .first:hover {
+            text-decoration: none;
+            color: white;
+        }
+        .second {
+            position: absolute;
+            margin-top: 13%;
+            margin-left: 5.5%;
+            font-size: 26px;
+            display: inline-flex;
+            flex-wrap: wrap;
+            font-size: 60px;
+            width: 900px;
+            height: 100px;
+        }
+        .second:hover {
+            text-decoration: none;
+            color: white;
+        }
+        .bt {
+            margin-top: 28%;
+            margin-left: 5.5%;
+            @import'button';
+        }
+    }

@@ -1,0 +1,23 @@
+.but {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 50px;
+    transition: background .3s cubic-bezier(1, 0, 0, 1), color .3s cubic-bezier(1, 0, 0, 1);
+    display: inline-block;
+    min-width: 180px;
+    padding: 0 20px;
+    line-height: 46px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.but:hover,
+.but:active {
+    background-color: #fff;
+    color: #000;
+}

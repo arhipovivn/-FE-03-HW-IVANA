@@ -1,24 +1,68 @@
-.nav_menu {
-    color: white;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    .item1 {
+nav {
+    .nav_menu {
         color: white;
+        position: relative;
         display: inline-flex;
-        align-content: center;
-        font-size: 15px;
+        width: 100%;
+        .item_menu {
+            margin-top: 1%;
+            margin-bottom: 43px;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            margin-left: 17%;
+            .item1 {
+                margin-left: 3px;
+                margin-right: 1px;
+                display: inline-flex;
+                align-content: center;
+                font-size: 15px;
+            }
+            .item1 a {
+                text-decoration: none;
+            }
+            .item1 a:hover {
+                color: rgb(80, 117, 238);
+            }
+            .item2 {
+                border-left: 1px solid white;
+                margin-left: 30px;
+                display: inline-flex;
+                align-content: center;
+                font-size: 15px;
+            }
+            .item2 {
+                padding-left: 30px;
+            }
+            .item2 a {
+                text-decoration: none;
+                color: white;
+            }
+            .lup {
+                width: 36px;
+                height: 36px;
+                fill: white;
+            }
+        }
     }
-    .item1 a {
-        text-decoration: none;
-        color: white;
+    .sheer {
+        margin-top: 5%;
+        margin-left: 58%;
+        position: absolute;
     }
-    .item1 a:hover {
-        color: rgb(80, 117, 238);
+    .sheer span {
+        font-weight: 900;
+    }
+    .main_logo {
+        position: absolute;
+        margin-right: 200px;
+        margin-top: 1.5%;
+        width: 70px;
+        height: 70px;
+        margin-left: 5%;
     }
 }
 
-.main_logo {
+
+/* .main_logo {
     position: absolute;
     margin-left: 900px;
-}
+} */

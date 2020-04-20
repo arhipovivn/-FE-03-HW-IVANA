@@ -5,45 +5,316 @@
 * ul li {
   list-style: none;
 }
+* a {
+  color: white;
+  text-decoration: none;
+}
 
-.nav_menu {
+nav .nav_menu {
   color: white;
   position: relative;
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
+  width: 100%;
 }
-.nav_menu .item1 {
-  color: white;
+nav .nav_menu .item_menu {
+  margin-top: 1%;
+  margin-bottom: 43px;
+  border-bottom: 1px solid white;
+  margin-left: 17%;
+}
+nav .nav_menu .item_menu .item1 {
+  margin-left: 3px;
+  margin-right: 1px;
   display: inline-flex;
   align-content: center;
   font-size: 15px;
 }
-.nav_menu .item1 a {
+nav .nav_menu .item_menu .item1 a {
+  text-decoration: none;
+}
+nav .nav_menu .item_menu .item1 a:hover {
+  color: #5075ee;
+}
+nav .nav_menu .item_menu .item2 {
+  border-left: 1px solid white;
+  margin-left: 30px;
+  display: inline-flex;
+  align-content: center;
+  font-size: 15px;
+}
+nav .nav_menu .item_menu .item2 {
+  padding-left: 30px;
+}
+nav .nav_menu .item_menu .item2 a {
   text-decoration: none;
   color: white;
 }
-.nav_menu .item1 a:hover {
-  color: #5075ee;
+nav .nav_menu .item_menu .lup {
+  width: 36px;
+  height: 36px;
+  fill: white;
 }
-
-.main_logo {
+nav .sheer {
+  margin-top: 5%;
+  margin-left: 58%;
   position: absolute;
-  margin-left: 900px;
+}
+nav .sheer span {
+  font-weight: 900;
+}
+nav .main_logo {
+  position: absolute;
+  margin-right: 200px;
+  margin-top: 1.5%;
+  width: 70px;
+  height: 70px;
+  margin-left: 5%;
 }
 
-.a {
+/* .main_logo {
+    position: absolute;
+    margin-left: 900px;
+} */
+.background {
   background-image: url("https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/color-in/ci-00-teaser-hd.jpg?imwidth=1920");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 600px;
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  transition: opacity 124ms linear, transform 2s linear;
+  background-color: black;
 }
 
-.a {
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s ease;
-  z-index: 1435;
+.background:hover {
+  transform: scale(1.05);
+}
+
+.wrapper {
+  width: 100%;
+  height: 500px;
+  box-sizing: border-box;
+}
+.wrapper .nav_menu {
+  background-image: linear-gradient(to top, rgba(32, 31, 31, 0), #999);
+  height: 100px;
+}
+
+/* .k {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.k:hover {
+    opacity: .4;
+} */
+/* .hov {
+        transform: scale(1);
+        transition: transform 12s cubic-bezier(.23, 1, .32, 1);
+    }
+    .hov:hover .hov:after {
+        opacity: 1;
+        height: 100%;
+    }
+    .how:after {
+        content: '';
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 150%;
+        top: 0;
+        left: 0;
+        z-index: ;
+        background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .7));
+        transition: opacity 3s cubic-bezier(.23, 1, .32, 1), height 3s cubic-bezier(.23, 1, .32, 1);
+    }
+ */
+/* hov {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background-color: rgba(0, 0, 0, .5);
+transition: background-color .3s ease;
+z-index: 1;
+}
+
+.a:hover {
+position: absolute;
+transform: scale(1.2);
+transition: ease 3s;
+background-color: rgba(0, 0, 0, .5);
+transition: background-color .3s ease;
+z-index: 1;
+} */
+.fcontext .first {
+  position: absolute;
+  margin-top: 12%;
+  margin-left: 5%;
+  font-size: 26px;
+}
+.fcontext .first:hover {
+  text-decoration: none;
+  color: white;
+}
+.fcontext .second {
+  position: absolute;
+  margin-top: 13%;
+  margin-left: 5.5%;
+  font-size: 26px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  font-size: 60px;
+  width: 900px;
+  height: 100px;
+}
+.fcontext .second:hover {
+  text-decoration: none;
+  color: white;
+}
+.fcontext .bt {
+  margin-top: 28%;
+  margin-left: 5.5%;
+}
+.fcontext .bt .but {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 50px;
+  transition: background 0.3s cubic-bezier(1, 0, 0, 1), color 0.3s cubic-bezier(1, 0, 0, 1);
+  display: inline-block;
+  min-width: 180px;
+  padding: 0 20px;
+  line-height: 46px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+.fcontext .bt .but:hover,
+.fcontext .bt .but:active {
+  background-color: #fff;
+  color: #000;
+}
+
+/* .fgrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    . {
+        margin-top: 700px;
+        width: 50%;
+        height: 30%;
+        background-color: yellow;
+        grid-row: 1 / 3;
+        grid-column: 1 / 3;
+    }
+    .fam {
+        margin-top: 700px;
+        width: 50%;
+        height: 30%;
+        box-sizing: border-box;
+        position: absolute;
+        background-image: url("https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/bmw-game/bg-00-teaser-square.jpg?imwidth=1024");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+} */
+.fgrid {
+  display: grid;
+  position: absolute;
+  margin-top: 13%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2px;
+  width: 100%;
+  height: 650px;
+}
+.fgrid .col1 {
+  width: 100%;
+  height: 655px;
+}
+.fgrid .col1 .vid {
+  /* position: relative;
+  z-index: -1; */
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+.fgrid .col1 .col1txt {
+  width: 200px;
+  z-index: 4;
+  position: absolute;
+  color: #fff;
+  font-size: 80px;
+  text-align: center;
+}
+.fgrid .col2 {
+  z-index: 65;
+  box-sizing: border-box;
+  background-image: url("https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/bmw-game/bg-00-teaser-square.jpg?imwidth=1024");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 640px;
+}
+.fgrid .col2 .first {
+  position: absolute;
+  margin-top: 26%;
+  margin-left: 5%;
+  font-size: 26px;
+}
+.fgrid .col2 .first:hover {
+  text-decoration: none;
+  color: white;
+}
+.fgrid .col2 .second {
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 5.5%;
+  font-size: 26px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  font-size: 50px;
+  width: 560px;
+  height: 100px;
+}
+.fgrid .col2 .second:hover {
+  text-decoration: none;
+  color: white;
+}
+.fgrid .col2 .bt {
+  margin-top: 86%;
+  margin-left: 10%;
+}
+.fgrid .col2 .bt .but {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 50px;
+  transition: background 0.3s cubic-bezier(1, 0, 0, 1), color 0.3s cubic-bezier(1, 0, 0, 1);
+  display: inline-block;
+  min-width: 180px;
+  padding: 0 20px;
+  line-height: 46px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+.fgrid .col2 .bt .but:hover,
+.fgrid .col2 .bt .but:active {
+  background-color: #fff;
+  color: #000;
 }
 
 /*# sourceMappingURL=main.css.map */

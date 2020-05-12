@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HomeWork</title>
+</head>
+
+<body>
+    <script>
+        // task 1
+
+        function triangle(x, y, z) {
+
+            if (Math.pow(x, 2) + Math.pow(y, 2) == Math.pow(z, 2)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        console.log(triangle(5, 12, 13));
+
+        // task 2
+
+        function repeat(str, n) {
+            for (let i = 1; i <= n; i++) {
+                console.log(str);
+            }
+        }
+        repeat('привет', 3);
+
+        // task 3
+
+        function Class(student, table) {
+
+
+            if ((student % table == 0) && (student - 2 * table == 0)) {
+                return 'Парт хватает всем';
+            } else if (student / table > 2) {
+                let a = Math.round((student - table * 2) / 2);
+
+                return 'не хватает ' + a + ' парты';
+            } else {
+                let b = Math.abs(student / 2 - table);
+                b = Math.round(b);
+                return b + 'лишних';
+            }
+        }
+
+        console.log(Class(2, 3));
+
+        // task 4
+
+        function grading(n) {
+            if (n == 0 || isNaN(n) == true) {
+                return 'error'
+            }
+            if (n == 10) return 'Brilliant'
+            if (n == 9) return 'Excellent'
+            if (n == 8) return ' Almost excellent	'
+            if (n == 7) return 'Very good	'
+            if (n == 6) return 'Good'
+            if (n == 5) return 'Almost good	'
+            if (n == 4) return 'Satisfactory'
+            if (n == 3) return 'Satisfactory'
+            if (n == 2) return 'Unsatisfactory'
+            if (n == 1) return 'Unsatisfactory'
+        }
+        console.log(grading(1));
+
+        // task 5
+
+        // чтобы не мешало смотреть 7 задание 
+        // function numb(a) {
+        //     let n;
+        //     do {
+        //         n = Number(prompt('введите число'));
+        //     } while (n != 0) {
+        //         return 'вы ввели 0';
+        //     }
+        // }
+        // console.log(numb(3));
+
+
+        // task 6
+
+        // function number(a) {
+        //     let n, i, sum;
+        //     sum = 0;
+        //     i = 0;
+        //     do {
+        //         n = Number(prompt('введите число'));
+        //         sum += n;
+        //         i++;
+        //         console.log(sum);
+        //     }
+        //     while (sum < 100) {
+        //         return 'вы ввели ' + i + ' чисел';
+        //     }
+        // }
+        // console.log(number(3));
+
+        // task 7
+
+        function check(n) {
+
+            if (n == 1) return 'не простое и не составное';
+            if (n == 2) return 'простое число'
+            for (let i = 2; i < n; i++) {
+                if (n % i == 0) return 'число составное ';
+                return 'число простое';
+            }
+        }
+        console.log(check(78));
+
+        // task 8
+
+        function NameSeason(n) {
+            if (n < 1 || n > 12 || isNaN(n) == true) {
+                return "Ошибка";
+            }
+            if (n <= 2 || n >= 12) {
+                return "Зима ";
+            }
+            if (n >= 3 && n <= 5) {
+                return "весна";
+            }
+            if (n >= 6 && n <= 8) {
+                return "лето ";
+            } else {
+                return "осень"
+            }
+        }
+        console.log(NameSeason(12));
+
+        // task 9
+
+        // function NumbSev() {
+        //     for (let i = 99; i >= 10; i--) {
+        //         if (i % 7 == 0 || i % 10 == 7) {
+        //             console.log(i)
+        //         }
+        //     }
+        // }
+        // NumbSev();
+
+        // task 10
+
+        // function NumbT() {
+        //     for (let i = 2; i <= 20; i++) {
+        //         for (let n = 1; n <= i; n++) {
+        //             if (i % n == 0) {
+        //                 console.log(n);
+        //             }
+        //         }
+        //     }
+        // }
+        // NumbT();
+
+        // task 11
+
+        // function NumbTT(x, y) {
+        //     for (let i = x; i <= y; i++) {
+        //         for (let n = 1; n <= i; n++) {
+        //             if (i % n == 0) {
+        //                 console.log(n);
+        //             }
+        //         }
+        //     }
+        // }
+        // NumbTT(2, 4);
+
+        // task 12
+
+        function byte(size, unit) {
+            if (isNaN(size) == true || Number(unit) == true) {
+                return 'ошибка';
+            }
+            if (unit == "кб") {
+                return size * 1024 + ' байт';
+            }
+            if (unit == "мб") {
+                return size * Math.pow(1024, 2) + ' байт';
+            }
+            if (unit == "гб") {
+                return size * Math.pow(1024, 3) + ' байт';
+            } else {
+                return 'ошибка'
+            }
+        }
+        console.log(byte(1, "мб"));
+
+        // task 13
+
+        function Nod(x, y) {
+            let i;
+            if (x < y) i = x;
+            else i = y;
+            for (i; i > 0; i--) {
+                if (x % i == 0 && y % i == 0) {
+                    return i
+                }
+            }
+        }
+        console.log(Nod(10, 120));
+
+        // task 14 
+
+        function NodRec(x, y) {
+            let i;
+            if (x < y) i = x;
+            else i = y;
+            for (i; i > 0; i--) {
+                if (x % i == 0 && y % i == 0) {
+                    return i
+                }
+            }
+            if (i >= 0) {
+                NodRec();
+            }
+            return i;
+        }
+        console.log(NodRec(3, 5));
+
+        // task 15
+
+        function Forma(a) {
+            if (a == 1 || (a % 10 == 1 && a >= 21)) {
+                return a + ' карандаш';
+            }
+            if ((a >= 2 && a <= 4) || (a % 10 >= 2 && a % 10 <= 4)) {
+                return a + ' карандаша';
+            } else {
+                return a + ' карандашей';
+            }
+        }
+        console.log(Forma(111));
+
+        // task 16
+
+        function Pow(n) {
+            let i, j;
+            for (i = 1; i < 10; i++) {
+                for (j = 1; j < 10; j++) {
+                    if (n == Math.pow(i, 2) + Math.pow(j, 2))
+                        return "можно"
+                }
+            }
+            return "нельзя"
+        }
+        console.log(Pow(18));
+    </script>
+</body>
+
+</html>

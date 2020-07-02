@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obj</title>
+</head>
+
+<body>
+    <script>
+        // task 1
+        // let obj = {
+        //         a: 1,
+        //         b: 2,
+        //         c: 3
+        //     }
+        //     // console.log(obj.c);
+        //     // console.log(obj["c"]);
+        // for (let key in obj)
+        //     console.log(obj[key]);
+        // task 2
+        // let city = {};
+        // city.name = "minsk";
+        // city.population = 17;
+        // console.log(city);
+        // task 3,4
+        // let bel = [];
+        // bel[0] = {
+        //     name: "minsk",
+        //     population: 1
+        // };
+        // bel[1] = {
+        //     name: "brest",
+        //     population: 2
+        // };
+        // bel[2] = {
+        //     name: "gomel",
+        //     population: 3
+        // };
+        // bel[3] = {
+        //     name: "godno",
+        //     population: 4
+        // }
+        // bel[4] = {
+        //     name: "vitebsk",
+        //     population: 5
+        // }
+        // bel[5] = {
+        //     name: "mogilev",
+        //     population: 6
+        // }
+        // for (let key in bel)
+        //     console.log(bel[key]);
+        // task 5  Напишите функцию, которая получает в качестве аргументов объект и строку и проверяет, есть ли в этом объекте свойство с именем, равным этой строке.
+
+        // obj = {
+        //     name: "minsk",
+        //     color: "blackghg"
+        // }
+
+        // function ob(a, b) {
+        //     for (let key in b) {
+        //         if (a === b[key]) {
+        //             console.log(true)
+        //         }
+        //     }
+        // }
+
+        // ob("minsk", obj);
+        // task 6  Создайте объект для хранения своего любимого кулинарного рецепта. Он должен содержать название, ингредиенты и их необходимое количество (в виде вложенного объекта), а также количество порций (больше 1). Напишите функцию, которая получает "рецепт", подсчитывает, сколько каждого ингредиента нужно на одну порцию, и выводит информацию об этом в консоль.
+
+        // recipt = {
+        //     name: "salad",
+        //     ingredient: {
+        //         cucumder: 1,
+        //         salad: 100,
+        //         tomato: 1,
+        //         sause: 10
+        //     },
+        //     portion: 2
+        // }
+
+        // function count(obj) {
+        //     if (obj.portion == 1) {
+        //         console.log("Для приготовления" + " " + obj.portion + " " + "порции салата необходимо: " +
+        //             "Огурец: " + obj.ingredient.cucumder + ", " + "Салат грамм: " + obj.ingredient.salad + ", " + "Помидор: " + obj.ingredient.tomato + ", " + "соус грамм: " + obj.ingredient.sause + ". ")
+        //     }
+        //     if (obj.portion == 2) {
+        //         console.log("Для приготовления" + " " + obj.portion + " " + "порции салата необходимо: " +
+        //             "Огурец: " + obj.ingredient.cucumder * obj.portion + ", " + "Салат грамм: " + obj.ingredient.salad * obj.portion + ", " + "Помидор: " + obj.ingredient.tomato * obj.portion + ", " + "соус грамм: " + obj.ingredient.sause * obj.portion + ". ")
+        //     }
+        // }
+        // count(recipt);
+        // task 7  Создайте объект "Цилиндр" (свойства – радиус и высота). Добавьте в него метод, который считает объём цилиндра (используя this).
+        // cylinder = {
+        //     radius: 30,
+        //     height: 10,
+        //     volume: function() {
+        //         var v = (Math.pow(this.radius, 2) * 3.14 * this.height);
+        //         console.log("Объем цилиндра равен: " + v)
+        //     },
+        // };
+        // cylinder.volume();
+
+        // task 8  Выберите пингвина из [списка вымышленных пингвинов на Википедии](https://en.wikipedia.org/wiki/List_of_fictional_penguins) и опишите его в виде объекта (не менее трёх полей; например, имя, создатель и источник). Добавьте этому объекту свойство canFly. Добавьте два метода: sayHello, который выводит в консоль приветствие и представление вашего пингвина, и fly, который в зависимости от значения свойства canFly (true или false) определяет, может ли пингвин летать, и сообщает об этом в консоль.
+        penguins = {
+            name: "pingo",
+            origin: "Rasmus Klump",
+            creator: "Carla and Vilhelm Hansen",
+            canFly: true,
+            sayHello: function() {
+                console.log("Привет я " + penguins.name + ", " + " Мое происхождение: " + penguins.origin + ", " + "Мой создатель: " + penguins.creator + ". ")
+            },
+            fly: function() {
+                if (penguins.canFly == true)
+                    console.log("Пингвин умеет летать")
+                else {
+                    console.log("Пингвин не умеет летать")
+                }
+            }
+        }
+        penguins.sayHello();
+        penguins.fly();
+    </script>
+
+</body>
+
+</html>

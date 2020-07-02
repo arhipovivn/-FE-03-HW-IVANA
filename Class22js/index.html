@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arr</title>
+</head>
+
+<body>
+    <script>
+        // // task 1
+        // let arr = [];
+        // let i = 0;
+        // for (i; i <= 10; i++)
+        //     arr[i] = i * 2;
+        // console.log(arr);
+        // // task 2
+        // let arrFive = [];
+        // let n;
+        // for (n = 0; n <= 10; n++) {
+        //     arrFive[n] = n * 5;
+        // }
+        // console.log(arrFive);
+        // task 3
+        // let num1 = prompt("ВВедите число?");
+        // let num2 = prompt("ВВедите число?");
+        // let num3 = prompt("ВВедите число?");
+        // let arrNum = [num1, num2, num3];
+        // lonArrNum = arrNum.length;
+        // let max = [0];
+        // for (let i = 0; i < lonArrNum; i++) {
+        //     if (arrNum[i] > max)
+        //         max = arrNum[i];
+        // }
+        // console.log(max)
+        // task 4
+        // let arrFiveRev = [];
+        // for (let n = 1; n <= 20; n++) {
+        //     if (n % 2 == 0)
+        //         arrFiveRev.push(n);
+        //     for (let i = 0; i < arrFiveRev.length; i++) {
+        //         arrFiveRev[i] = i * 5;
+        //     }
+        // }
+        // for (let i = 0; i < Math.floor(arrFiveRev.length / 2); i++) {
+        //     let t = arrFiveRev[i];
+        //     arrFiveRev[i] = arrFiveRev[arrFiveRev.length - i - 1];
+        //     arrFiveRev[arrFiveRev.length - i - 1] = t;
+        // }
+        // console.log(arrFiveRev);
+        // task 5
+        let arr = [];
+        for (let i = 0; i < 35; i++) {
+            arr[i] = i + 1;
+        }
+        let newArr = arr.splice(0, 10);
+        arr = arr.concat(newArr); // добавили в конец только элементы массива  newArr
+        console.log(newArr);
+        let mass = arr.splice(11, 10)
+        console.log(arr);
+        mass = mass.reverse();
+        arr = arr.concat(mass);
+        console.log(mass);
+        // arr = arr.fill(11, 20)
+        // console.log(arr);
+        console.log(arr);
+
+
+
+        // task 6
+        // function serchErr(a) {
+        //     let arr = [1, 3, 3, 4, 5, 5, 5];
+        //     let i, j;
+        //     for (i = 0; i < a; i++) {
+        //         console.log(arr.indexOf(i));
+        //         // for (j = 0; j < a; j++) {
+        //         //     if (arr[i] == j) {
+
+
+        //     }
+        // }
+
+        // serchErr(10);
+    </script>
+</body>
+
+</html>

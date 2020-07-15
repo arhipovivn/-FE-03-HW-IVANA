@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // task 1  Дан элемент #elem. Добавьте ему класс "www".
+
+        // let div = document.createElement('div');
+        // div.className = "www";
+        // document.body.append(div);
+        // div.innerHTML = "<p>Привет</p>";
+        // // task 2  Дан элемент #elem. Проверьте наличие у него класса "www", если есть - удалите класс
+        // // let elem = document.getElementsByClassName('www');
+        // // div.classList.remove('www');
+        // // console.log(elem);
+        // // task 3  Напишите функцию поиска recursiveSearchTags, которая принимает на вход document и имя тега,
+        // //  а возвращает массив из всех элементов соответствующих этому тегу. Поиск идет в теге body
+        // function recursiveSearchTags(document, tagName) {
+        //     let arr = [...document.getElementsByTagName(tagName)];
+        //     // return arr
+        //     console.log(arr);
+        // }
+        // recursiveSearchTags(document, 'div');
+        // task 4 Дан ul. Дан массив. Вставьте элементы этого массива в конец ul так,
+        //  чтобы каждый элемент стоял в своем li. Сделайте так, чтобы четные позиции имели красный фон.
+        // let ul = document.createElement('ul');
+        // document.body.append(ul);
+
+        // let arr = [1, 6, 3, 4, 5];
+
+        // function set() {
+        //     let fragment = new DocumentFragment();
+        //     for (let i = 0; i < arr.length; i++) {
+        //         let li = document.createElement('li');
+        //         li.append(arr[i]);
+        //         fragment.append(li);
+        //         if (arr[i] % 2 == 0) {
+        //             li.style.color = 'red';
+        //         }
+        //     }
+        //     return fragment;
+        // }
+        // ul.append(set());
+
+        // task 5 Дан элемент #elem. Найдите его соседа сверху и добавьте ему в конец текст '!'
+        // let body = document.body;
+        // let div = document.createElement('div');
+        // div1 = document.createElement('div');
+        // body.append(div1);
+        // body.append(div);
+        // div.innerHTML = "<p>Привет</p>";
+        // let a = div.previousSibling;
+        // a.innerHTML = "<p>!</p>";
+        // task 7. Реализуйте функцию normalizeClassNames, которая нормализует имена классов для всех элементов на странице.
+        //  В данном случае это означает что происходит преобразование всех классов написанных используя kebab нотацию в camelCase нотацию: text-center => textCenter
+        function normalizeClassNames(el) {
+            [...el];
+            let a = el.split("-");
+            console.log(a);
+            let b = a.map((a, index) => index === 0 ? a : a[0].toUpperCase() + a.substring(1)).join("");
+            console.log(b);
+        }
+        normalizeClassNames("я-люблю-свою-работу");
+    </script>
+</body>
+
+</html>
